@@ -1,6 +1,9 @@
 let listIconMenu = Array.from(document.getElementById("list-menu").querySelectorAll("svg"));
 let boutons = Array.from(document.getElementById("boutons").children);
-const message = document.body.lastElementChild;
+let gameContainer = document.getElementById("game-container");
+let background = document.getElementById("background");
+let gameContainerChildren = Array.from(gameContainer.children);
+
 class ButtonMenu{
     constructor(element,ElementsTab){
         this.element = element;
@@ -46,19 +49,33 @@ listIconMenu.forEach(e=>{
 
 function resizeDocument(){
     if(parseInt(window.innerWidth)<1000){
-        document.body.style.display = "none"
-        alert("Open with a screen greater than 100px\nouvrir avec un ecran supérieur à 100px");
+        background.style.display = "none"
+        gameContainer.style.display = "none";
+        gameContainerChildren.forEach(e=>{
+            e.style.display = "none"
+        })
     }else{
-        document.body.style.display = "block";
+        background.style.display = "block";
+        gameContainer.style.display = "flex";
+        gameContainerChildren.forEach(e=>{
+            e.style.display = "block";
+        })
     }
 }
 function checkWidth(){
     if(parseInt(window.innerWidth)<1000){
-        document.body.style.display = "none"
-        alert("Open with a screen greater than 100px\nouvrir avec un ecran supérieur à 100px");
+        background.style.display = "none"
+        gameContainer.style.display = "none";
+        gameContainerChildren.forEach(e=>{
+            e.style.display = "none"
+        })
     }else{
-        document.body.style.display = "block";
+        background.style.display = "block";
+        gameContainer.style.display = "flex";
+        gameContainerChildren.forEach(e=>{
+            e.style.display = "block";
+        })
     }
 }
-window.addEventListener("resize",resizeDocument);
+//window.addEventListener("resize",resizeDocument);
 document.addEventListener("DOMContentLoaded",checkWidth);
