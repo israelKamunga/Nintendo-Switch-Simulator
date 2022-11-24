@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vue/bootstrap.min.css">
+    <link rel="stylesheet" href="vue/style.css">
+    <script src="vue/bootstrap.bundle.min.js" defer></script>
+    <script src="vue/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="d-flex mt-5 game-container position-absolute" id="game-container">
+        <div class=" card-game me-3">
+            <img src="img/H2x1_NSwitch_MarioKart8Deluxe_image1600w.jpg" alt="" class="">
+        </div>
+        <div class=" card-game me-3">
+            <img src="img/H2x1_NSwitch_MarioPartySuperStars_image1600w-1.jpg" alt="" class="">
+        </div>
+        <div class=" card-game me-3">
+            <img src="img/H2x1_NSwitch_MarioPartySuperStars_image1600w.jpg" alt="" class="">
+        </div>
+        <div class=" card-game me-3">
+            <img src="img/H2x1_NSwitch_SuperMarioOdyssey_image1600w.jpg" alt="" class="">
+        </div>
+        <div class=" card-game me-3">
+            <img src="img/hero.webp" alt="" class="">
+        </div>
+        <div class=" card-game me-3">
+            <img src="img/zelda-link-1024x576.jpg" alt="" class="">
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid vh-100 bg-dark position-fixed" id="background">
+        <div class="container vh-100">
+            <div class="row h-100">
+                <div class="d-flex mt-4">
+                    <img src="img/latest.jpg" alt="" class="user-icon me-auto img-fluid" id="user-icon">
+                    <div class="d-flex gx-3">
+                        <p class="text-white me-2">20:14</p>
+                        <p class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-wifi" viewBox="0 0 16 16">
+                                <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+                                <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+                            </svg>
+                        </p>
+                        <p class="text-white me-2">74%</p>
+                        <p class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-battery" viewBox="0 0 16 16">
+                                <path d="M0 6a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6zm2-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2zm14 3a1.5 1.5 0 0 1-1.5 1.5v-3A1.5 1.5 0 0 1 16 8z"/>
+                            </svg>
+                        </p>
+                    </div>
+                </div>
+                <!--
+                <div class="d-flex mt-5 game-container" id="game-container">
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                    <div class="col-sm-3 card-game me-3">
+                        <img src="img/latest.jpg" alt="" class="">
+                    </div>
+                </div>
+                -->
+                <div class="menu mt-5 pb-4">
+                    <div class="row">
+                        <div class="list-menu d-flex justify-content-center pb-4" id="list-menu">
+                            <div class="align-icon">
+                                <div class="svg nSwitchIcon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-nintendo-switch" viewBox="0 0 16 16">
+                                        <path d="M9.34 8.005c0-4.38.01-7.972.023-7.982C9.373.01 10.036 0 10.831 0c1.153 0 1.51.01 1.743.05 1.73.298 3.045 1.6 3.373 3.326.046.242.053.809.053 4.61 0 4.06.005 4.537-.123 4.976-.022.076-.048.15-.08.242a4.136 4.136 0 0 1-3.426 2.767c-.317.033-2.889.046-2.978.013-.05-.02-.053-.752-.053-7.979Zm4.675.269a1.621 1.621 0 0 0-1.113-1.034 1.609 1.609 0 0 0-1.938 1.073 1.9 1.9 0 0 0-.014.935 1.632 1.632 0 0 0 1.952 1.107c.51-.136.908-.504 1.11-1.028.11-.285.113-.742.003-1.053ZM3.71 3.317c-.208.04-.526.199-.695.348-.348.301-.52.729-.494 1.232.013.262.03.332.136.544.155.321.39.556.712.715.222.11.278.123.567.133.261.01.354 0 .53-.06.719-.242 1.153-.94 1.03-1.656-.142-.852-.95-1.422-1.786-1.256Z"/>
+                                        <path d="M3.425.053a4.136 4.136 0 0 0-3.28 3.015C0 3.628-.01 3.956.005 8.3c.01 3.99.014 4.082.08 4.39.368 1.66 1.548 2.844 3.224 3.235.22.05.497.06 2.29.07 1.856.012 2.048.009 2.097-.04.05-.05.053-.69.053-7.94 0-5.374-.01-7.906-.033-7.952-.033-.06-.09-.063-2.03-.06-1.578.004-2.052.014-2.26.05Zm3 14.665-1.35-.016c-1.242-.013-1.375-.02-1.623-.083a2.81 2.81 0 0 1-2.08-2.167c-.074-.335-.074-8.579-.004-8.907a2.845 2.845 0 0 1 1.716-2.05c.438-.176.64-.196 2.058-.2l1.282-.003v13.426Z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">Nintendo Switch Online</p>
+                            </div>
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-newspaper" viewBox="0 0 16 16">
+                                        <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+                                        <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">News</p>
+                            </div>
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#ffc107" class="bi bi-bag" viewBox="0 0 16 16">
+                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">eShop</p>
+                            </div>
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#0d6efd" class="bi bi-image-alt" viewBox="0 0 16 16">
+                                        <path d="M7 2.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zm4.225 4.053a.5.5 0 0 0-.577.093l-3.71 4.71-2.66-2.772a.5.5 0 0 0-.63.062L.002 13v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4.5l-4.777-3.947z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">Album</p>
+                            </div>
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-joystick" viewBox="0 0 16 16">
+                                        <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2z"/>
+                                        <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">Manette</p>
+                            </div>
+
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-gear" viewBox="0 0 16 16">
+                                        <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                        <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">Parametres de la console</p>
+                            </div>
+                            <div class="align-icon">
+                                <div class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="white" class="bi bi-power" viewBox="0 0 16 16">
+                                        <path d="M7.5 1v7h1V1h-1z"/>
+                                        <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                                    </svg>
+                                </div>
+                                <p class="texte position-absolute text-primary description">Veille</p>
+                            </div>
+                        </div>
+                        <div class="d-flex me-auto justify-content-end align-items-center mt-1 text-white" id="boutons">
+                            <div class="d-flex">
+                                <p class="btn-A">+</p>
+                                <p class="me-3">Options</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="btn-A">A</p>
+                                <p>OK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
